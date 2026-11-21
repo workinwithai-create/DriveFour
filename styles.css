@@ -1,0 +1,17 @@
+body { font-family: system-ui, sans-serif; background: #0e0e10; color: #eee; margin: 0; padding: 1rem 1rem 5rem; }
+.eyebrow { color: #8af; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.75rem; }
+h1 { margin: 0.2rem 0; }
+.lead { max-width: 60ch; opacity: 0.85; }
+.status { color: #fc6; }
+.row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.4rem 0 1rem; }
+.row button, .dock button, .export button { background: #222; color: #eee; border: 1px solid #444; padding: 0.4rem 0.8rem; border-radius: 4px; cursor: pointer; }
+.row button.active { background: #2a6; border-color: #4c8; }
+.bars { display: flex; gap: 2px; height: 40px; margin: 0.5rem 0; background: #111; }
+.bar { flex: 1; background: #333; }
+.bar.active { background: #6af; }
+.controls { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0; }
+label { display: flex; align-items: center; gap: 0.4rem; }
+input, select { background: #222; color: #eee; border: 1px solid #444; padding: 0.3rem; }
+pre { background: #111; padding: 1rem; white-space: pre-wrap; font-size: 0.85rem; }
+.dock { position: fixed; bottom: 0; left: 0; right: 0; background: #111; padding: 0.6rem; display: flex; gap: 0.5rem; justify-content: center; border-top: 1px solid #333; }
+.note { font-size: 0.8rem; opacity: 0.6; }

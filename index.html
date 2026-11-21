@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DriveFour — drive desk</title>
+  <meta name="description" content="Four live bars that add drive so a static loop finally finishes." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<main>
+  <p class="eyebrow">WorkinWithAI · live chairs</p>
+  <h1>DriveFour</h1>
+  <p class="lead">Drive desk. Generators leave the loop static on roots. Session players add kick pushes, open hats, and bass anticipations so the four bars drive forward and the track can finish. Live piano, upright, nylon, kit, trumpet, violin.</p>
+  <p class="status" id="status">Tap to start audio · seating chairs…</p>
+  <p class="eyebrow">Groove</p>
+  <div class="row" id="grooves"></div>
+  <p class="eyebrow">Drive</p>
+  <div class="row" id="recipes"></div>
+  <p class="eyebrow">Form · loop 1–8 · drive 9–12</p>
+  <div class="bars" id="bars"></div>
+  <div class="controls">
+    <label>BPM <input type="number" id="bpm" min="60" max="180" value="92" /></label>
+    <label>Key <select id="key"><option>A minor</option><option>C major</option><option>D minor</option><option>E major</option><option>G major</option></select></label>
+    <label>Bars <input type="number" id="barsCount" min="4" max="16" value="8" /></label>
+  </div>
+  <h2>Punch list</h2>
+  <pre id="punch"></pre>
+  <div class="export">
+    <button id="exportWav">Export WAV</button>
+    <button id="exportMid">Export MIDI</button>
+  </div>
+  <p class="note">iOS silent switch mutes Web Audio. Tap to start. Audio never leaves the tab.</p>
+</main>
+<div class="dock">
+  <button id="playA">A · Loop</button>
+  <button id="playB">B · Drive</button>
+  <button id="play8">8 · Drive only</button>
+  <button class="ghost" id="stop">Stop</button>
+  <button class="ghost" id="copy">Copy punch</button>
+</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
